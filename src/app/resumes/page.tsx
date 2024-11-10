@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Resume() {
   return (
@@ -18,10 +19,17 @@ export default function Resume() {
       <div className="flex justify-center gap-8 flex-wrap">
         {/* Static Resume Builder Card */}
         <div className="bg-white text-black rounded-lg shadow-lg w-72 p-4 transform transition-transform duration-300 hover:scale-105">
-          <img 
-          src="./mile 1.PNG" 
-          alt="Static-Resume-Builder" 
-          className="h-32 w-full object-cover rounded-t-lg" />
+        import Image from 'next/image';
+
+<Image
+  src="./mile 1.PNG"
+  alt="Static-Resume-Builder"
+  height={32}
+  width={100} // Or a specific width in pixels
+  layout="fill" // Fills the container while maintaining aspect ratio
+  objectFit="cover" // Scales to fit container, maintaining aspect ratio
+  className="rounded-t-lg" // Adds rounded top corners
+/>
 
           <h2 className="text-xl font-semibold mt-4 ">Static-Resume-Builder</h2>
           <button className="text-blue-600 mt-2 py-2 px-4 font-bold rounded-md ">
@@ -33,7 +41,7 @@ export default function Resume() {
 
         {/* Dynamic Resume Builder Card */}
         <div className="bg-white text-black rounded-lg shadow-lg w-72 p-4  transform transition-transform duration-300 hover:scale-105">
-          <img 
+          <Image
           src="./mile 2.PNG" 
           alt="Dynamic-Resume-Builder" 
           className="h-32 w-full object-cover rounded-t-lg"
@@ -49,7 +57,7 @@ export default function Resume() {
 
         {/* Editable Resume Builder Card */}
         <div className="bg-white text-black rounded-lg shadow-lg w-72 p-4 transform transition-transform duration-300 hover:scale-105">
-          <img 
+          <Image
           src="./mile 3.PNG" 
           alt="Editable-Resume-Builder" 
           className="h-32 w-full object-cover rounded-t-lg" />

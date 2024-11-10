@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Navbar from "@/navbar";
+import Navbar from "../navbar";
 import Index from "../index"
 import Home from "./home/page"
 import About from "./about/page"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Projects() {
   return (
@@ -12,17 +13,17 @@ export default function Projects() {
         </h2>
         <div className="max-w-3xl bg-white shadow-lg rounded-lg p-8">
           <p className="text-lg text-gray-700 leading-relaxed">
-            As a dedicated and results-oriented junior developer, I'm passionate
+            As a dedicated and results-oriented junior developer, I am passionate
             about crafting innovative and user-friendly web applications. With a
             strong foundation in coding and design, I strive to continually
             improve my skills and stay up-to-date with the latest technologies. In
-            my previous role as a web developer, I've successfully contributed to
+            my previous role as a web developer, I have successfully contributed to
             various projects. My ability to quickly learn new technologies and
             adapt to changing requirements has enabled me to consistently deliver
             high-quality solutions.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mt-4">
-            I'm eager to continue expanding my skills and contribute to exciting
+            I am eager to continue expanding my skills and contribute to exciting
             projects in the field of web development.
           </p>
         </div>
@@ -42,7 +43,7 @@ export default function Projects() {
       <div className="flex justify-center items-center space-x-8 py-8">
         {/* Amazon Clone Card */}
         <div className="w-80 bg-white text-black rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
-          <img
+          <Image
             src="./amazon.PNG"
             alt="Amazon-Clone"
             className="h-48 w-full object-cover rounded-t-lg"
@@ -59,7 +60,7 @@ export default function Projects() {
 
         {/* Simple Calculator Card */}
         <div className="w-80 bg-white text-black rounded-lg shadow-lg  transform transition-transform duration-300 hover:scale-105">
-          <img
+          <Image
             src="./calcu.PNG"
             alt="Simple-Calculator"
             className="h-48 w-full object-cover rounded-t-lg"

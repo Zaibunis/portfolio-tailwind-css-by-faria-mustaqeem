@@ -2,6 +2,7 @@
 import Navbar from './navbar';
 import Typed from 'typed.js';
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const typedElement = useRef(null);
@@ -52,7 +53,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:w-1/2 p-8">
-          <img 
+          <Image
           src="/bg.png" 
           alt="Background" 
           className="rounded-lg shadow-lg ml-10 w-full h-[500px] object-cover" 
